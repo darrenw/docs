@@ -8,7 +8,7 @@
   <link href="https://www.w3.org/2008/site/images/favicon.ico" rel="icon">
   <meta content="Bikeshed version b0de3432c, updated Thu Oct 13 09:16:59 2022 -0700" name="generator">
   <link href="http://wicg.github.io/pending-beacon/" rel="canonical">
-  <meta content="44fda74bd5cb7c94a33fcf5010966b2457ef3a6b" name="document-revision">
+  <meta content="cef3309e6f3f90c855a509808500f0d76bcc7950" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -919,7 +919,7 @@ again before they are sent.</p>
 <c- b>interface</c-> <dfn class="idl-code" data-dfn-type="interface" data-export id="pendinggetbeacon"><code><c- g>PendingGetBeacon</c-></code><a class="self-link" href="#pendinggetbeacon"></a></dfn> : <a data-link-type="idl-name" href="#pendingbeacon" id="ref-for-pendingbeacon"><c- n>PendingBeacon</c-></a> {
     <a class="idl-code" data-link-type="constructor" href="#dom-pendinggetbeacon-pendinggetbeacon" id="ref-for-dom-pendinggetbeacon-pendinggetbeacon"><c- g>constructor</c-></a>(<a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-USVString" id="ref-for-idl-USVString①"><c- b>USVString</c-></a> <dfn class="idl-code" data-dfn-for="PendingGetBeacon/PendingGetBeacon(url, options), PendingGetBeacon/constructor(url, options), PendingGetBeacon/PendingGetBeacon(url), PendingGetBeacon/constructor(url)" data-dfn-type="argument" data-export id="dom-pendinggetbeacon-pendinggetbeacon-url-options-url"><code><c- g>url</c-></code><a class="self-link" href="#dom-pendinggetbeacon-pendinggetbeacon-url-options-url"></a></dfn>, <c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-pendingbeaconoptions" id="ref-for-dictdef-pendingbeaconoptions"><c- n>PendingBeaconOptions</c-></a> <dfn class="idl-code" data-dfn-for="PendingGetBeacon/PendingGetBeacon(url, options), PendingGetBeacon/constructor(url, options), PendingGetBeacon/PendingGetBeacon(url), PendingGetBeacon/constructor(url)" data-dfn-type="argument" data-export id="dom-pendinggetbeacon-pendinggetbeacon-url-options-options"><code><c- g>options</c-></code><a class="self-link" href="#dom-pendinggetbeacon-pendinggetbeacon-url-options-options"></a></dfn> = {});
 
-    <a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-undefined" id="ref-for-idl-undefined②"><c- b>undefined</c-></a> <a class="idl-code" data-link-type="method" href="#dom-pendinggetbeacon-seturl" id="ref-for-dom-pendinggetbeacon-seturl"><c- g>setUrl</c-></a>(<a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-USVString" id="ref-for-idl-USVString②"><c- b>USVString</c-></a> <dfn class="idl-code" data-dfn-for="PendingGetBeacon/setUrl(url)" data-dfn-type="argument" data-export id="dom-pendinggetbeacon-seturl-url-url"><code><c- g>url</c-></code><a class="self-link" href="#dom-pendinggetbeacon-seturl-url-url"></a></dfn>);
+    <a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-undefined" id="ref-for-idl-undefined②"><c- b>undefined</c-></a> <a class="idl-code" data-link-type="method" href="#dom-pendinggetbeacon-seturl" id="ref-for-dom-pendinggetbeacon-seturl"><c- g>setURL</c-></a>(<a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-USVString" id="ref-for-idl-USVString②"><c- b>USVString</c-></a> <dfn class="idl-code" data-dfn-for="PendingGetBeacon/setURL(url)" data-dfn-type="argument" data-export id="dom-pendinggetbeacon-seturl-url-url"><code><c- g>url</c-></code><a class="self-link" href="#dom-pendinggetbeacon-seturl-url-url"></a></dfn>);
 };
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://webidl.spec.whatwg.org/#Exposed" id="ref-for-Exposed②"><c- g>Exposed</c-></a>=(<c- n>Window</c->, <c- n>Worker</c->)]
@@ -1036,8 +1036,8 @@ again before they are sent.</p>
       <p>Call <a data-link-type="dfn" href="#send-a-queued-pending-beacon" id="ref-for-send-a-queued-pending-beacon②">send a queued pending beacon</a> with <var>beacon</var>.</p>
     </ol>
    </div>
-   <div class="algorithm" data-algorithm="setUrl(url)" data-algorithm-for="PendingGetBeacon">
-     The <dfn class="dfn-paneled idl-code" data-dfn-for="PendingGetBeacon" data-dfn-type="method" data-export id="dom-pendinggetbeacon-seturl"><code>setUrl(<var>url</var>)</code></dfn> steps are: 
+   <div class="algorithm" data-algorithm="setURL(url)" data-algorithm-for="PendingGetBeacon">
+     The <dfn class="dfn-paneled idl-code" data-dfn-for="PendingGetBeacon" data-dfn-type="method" data-export id="dom-pendinggetbeacon-seturl"><code>setURL(<var>url</var>)</code></dfn> steps are: 
     <ol>
      <li data-md>
       <p>Let <var>beacon</var> be <a data-link-type="dfn" href="https://webidl.spec.whatwg.org/#this" id="ref-for-this①③">this</a>'s <a data-link-type="dfn" href="#pendingbeacon-beacon" id="ref-for-pendingbeacon-beacon①②">beacon</a>.</p>
@@ -1184,7 +1184,7 @@ prescribed mitigations.</p>
    <li><a href="#pending-beacon-set-the-foreground-timeout">set the foreground timeout</a><span>, in § 2.2</span>
    <li><a href="#pending-beacon-set-the-payload">set the payload</a><span>, in § 2.2</span>
    <li><a href="#pending-beacon-set-the-url">set the url</a><span>, in § 2.2</span>
-   <li><a href="#dom-pendinggetbeacon-seturl">setUrl(url)</a><span>, in § 4</span>
+   <li><a href="#dom-pendinggetbeacon-seturl">setURL(url)</a><span>, in § 4</span>
    <li>
     timeout
     <ul>
@@ -1482,7 +1482,7 @@ prescribed mitigations.</p>
 <c- b>interface</c-> <a href="#pendinggetbeacon"><code><c- g>PendingGetBeacon</c-></code></a> : <a data-link-type="idl-name" href="#pendingbeacon"><c- n>PendingBeacon</c-></a> {
     <a class="idl-code" data-link-type="constructor" href="#dom-pendinggetbeacon-pendinggetbeacon"><c- g>constructor</c-></a>(<a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-USVString"><c- b>USVString</c-></a> <a href="#dom-pendinggetbeacon-pendinggetbeacon-url-options-url"><code><c- g>url</c-></code></a>, <c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-pendingbeaconoptions"><c- n>PendingBeaconOptions</c-></a> <a href="#dom-pendinggetbeacon-pendinggetbeacon-url-options-options"><code><c- g>options</c-></code></a> = {});
 
-    <a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-undefined"><c- b>undefined</c-></a> <a class="idl-code" data-link-type="method" href="#dom-pendinggetbeacon-seturl"><c- g>setUrl</c-></a>(<a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-USVString"><c- b>USVString</c-></a> <a href="#dom-pendinggetbeacon-seturl-url-url"><code><c- g>url</c-></code></a>);
+    <a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-undefined"><c- b>undefined</c-></a> <a class="idl-code" data-link-type="method" href="#dom-pendinggetbeacon-seturl"><c- g>setURL</c-></a>(<a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-USVString"><c- b>USVString</c-></a> <a href="#dom-pendinggetbeacon-seturl-url-url"><code><c- g>url</c-></code></a>);
 };
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://webidl.spec.whatwg.org/#Exposed"><c- g>Exposed</c-></a>=(<c- n>Window</c->, <c- n>Worker</c->)]
